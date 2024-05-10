@@ -1,0 +1,42 @@
+Wishlist
+ID
+userid
+equipmentId
+
+FAQ
+ID
+Question
+Answer
+
+ADMIN_MENU
+EQUIPMENT
+CATEGORY
+USER INFO
+ORDER->
+ORDER DETAIL
+PAYMENT 
+TECHNICIAN
+
+MASTERMENU->
+CITY
+STATE
+COUNTRY
+REMOVE CONTACT US
+REMOVE ABOUT
+
+USER
+category
+equipment
+wishlist
+faq
+about us
+contact us
+cart
+
+logout 
+register
+edit profile
+
+<?php
+require("adminpage.php");
+?>

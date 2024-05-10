@@ -8,7 +8,7 @@
         <meta content="Spruha Healthcare - Care you can Trust" name="description">
 
         <!-- Favicon -->
-        <link href="image/favicon.ico" rel="icon">
+        <link href="image/Logo.jpg" rel="icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-sm-6">
                         <i class="fa fa-phone-alt"></i>
-                        +91-9633520785
+                        +1-9633520785
                     </div>
                 </div>
             </div>
@@ -53,15 +53,16 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
                             <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="product-list.html" class="nav-item nav-link">Equipment</a>
+                            <a href="viewcategory.php" class="nav-item nav-link">Category</a>
                             <a href="product-detail.html" class="nav-item nav-link">Equipment Detail</a>
                             <a href="cart.html" class="nav-item nav-link">Cart</a>
                             <a href="checkout.html" class="nav-item nav-link">Checkout</a>
                             <a href="my-account.html" class="nav-item nav-link">My Account</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Master Pages</a>
                                 <div class="dropdown-menu">
-                                    <a href="wishlist.html" class="dropdown-item">Wishlist</a>
+                                    <a href="viewcountry.php" class="dropdown-item">Country</a>
+                                    <a href="viewstate.php" class="dropdown-item">State</a>
                                     
                                 </div>
                             </div>
@@ -70,8 +71,8 @@
                             <div class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
                                 <div class="dropdown-menu">
-                                    <a href="Login.php" class="dropdown-item">Login</a>
-                                    <a href="Add_user.php" class="dropdown-item">Register</a>
+                                    <a href="newlogin.php" class="dropdown-item">Login</a>
+                                    <a href="register.php" class="dropdown-item">Register</a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +89,7 @@
                     <div class="col-md-3">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="img/Logo.jpg" alt="Logo">
+                                <img src="image/Logo.jpg" alt="Logo">
                             </a>
                         </div>
                     </div>
@@ -148,21 +149,21 @@
                             <div class="header-slider-item">
                                 <img src="image/slider-1.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p>Variety of Medical Equipments</p>
                                     <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
                                 <img src="image/slider-2.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p>Variety of Medical Equipments</p>
                                     <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
                                 <img src="image/slider-3.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p>Variety of Medical Equipments</p>
                                     <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
@@ -173,13 +174,13 @@
                             <div class="img-item">
                                 <img src="image/category-1.jpg" />
                                 <a class="img-text" href="">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p>Variety of Medical Equipments</p>
                                 </a>
                             </div>
                             <div class="img-item">
                                 <img src="image/category-2.jpg" />
                                 <a class="img-text" href="">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p>Variety of Medical Equipments</p>
                                 </a>
                             </div>
                         </div>
@@ -212,7 +213,7 @@
                         <div class="category-item ch-400">
                             <img src="image/category-3.jpg" />
                             <a class="category-name" href="">
-                                <p>Some text goes here that describes the image</p>
+                                <p>Variety of Medical Equipments</p>
                             </a>
                         </div>
                     </div>
@@ -220,13 +221,13 @@
                         <div class="category-item ch-250">
                             <img src="image/category-4.jpg" />
                             <a class="category-name" href="">
-                                <p>Some text goes here that describes the image</p>
+                                <p>Variety of Medical Equipments</p>
                             </a>
                         </div>
                         <div class="category-item ch-150">
                             <img src="image/category-5.jpg" />
                             <a class="category-name" href="">
-                                <p>Some text goes here that describes the image</p>
+                                <p>Variety of Medical Equipments</p>
                             </a>
                         </div>
                     </div>
@@ -234,13 +235,13 @@
                         <div class="category-item ch-150">
                             <img src="image/category-6.jpg" />
                             <a class="category-name" href="">
-                                <p>Some text goes here that describes the image</p>
+                                <p>Variety of Medical Equipments</p>
                             </a>
                         </div>
                         <div class="category-item ch-250">
                             <img src="image/category-7.jpg" />
                             <a class="category-name" href="">
-                                <p>Some text goes here that describes the image</p>
+                                <p>Variety of Medical Equipments</p>
                             </a>
                         </div>
                     </div>
@@ -248,7 +249,7 @@
                         <div class="category-item ch-400">
                             <img src="image/category-8.jpg" />
                             <a class="category-name" href="">
-                                <p>Some text goes here that describes the image</p>
+                                <p>Variety of Medical Equipments</p>
                             </a>
                         </div>
                     </div>

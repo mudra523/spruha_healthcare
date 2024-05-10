@@ -1,0 +1,19 @@
+
+
+Steps
+
+1. In query remove *  and write your filed name without Id
+2. Remove <th>Id</th> tag
+3. Remove echo line for Id
+
+
+
+
+vview Equipment baki che ne?
+haa
+
+ok
+pelano page batav jema view Equipment karavanu che e healthcare valu...kenneth nu??
+wait
+
+pela to add karvu padse ne

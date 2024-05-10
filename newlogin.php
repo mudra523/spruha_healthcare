@@ -6,7 +6,6 @@ session_start();
 include("connection.php");
 require("adminmaster.php");
 
-$errors = "";
 
 if(isset($_POST['Submit'])) {
     // Grab User submitted information
@@ -17,7 +16,7 @@ if(isset($_POST['Submit'])) {
     if($email === 'admin' && $password === 'admin') {
         // Redirect to admin page
         $_SESSION["UserID"] = -1;
-        header("Location: index.php");
+        header("Location: newadminhome.php");
         exit();
     } else {
         $errors = "Invalid Username or Password!";

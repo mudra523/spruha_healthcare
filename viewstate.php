@@ -2,7 +2,7 @@
 require("adminmaster.php");
 include("connection.php");
 
-$delID = $_GET['DeleteId'];
+/*$delID = $_GET['DeleteId'];
 
 if($delID > 0 )
 {
@@ -10,7 +10,7 @@ if($delID > 0 )
 	$result1 = mysqli_query($conn, $sql);
 	echo '<script>window.location.href = "viewstate.php";</script>';
 }
-
+*/
 // Fetch all users data from database
 $sql = "SELECT s.ID,s.Statename,c.Countryname from state s LEFT JOIN country c on s.CountryID = c.ID";
 $result = mysqli_query($conn, $sql);

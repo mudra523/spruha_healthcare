@@ -1,0 +1,4 @@
+Latest Update Healthcare Folder is Uploaded.
+All the pages inside it are perfectly running.
+Except Addequipment page.
+Dt:- 14/2/2021

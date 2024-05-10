@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Validate form</title>
+<script type="text/javascript">
+function validate_form(){
+var x=feedback.lname.value;
+var e=feedback.email.value;
+var atpos=e.indexOf("@");
+var dotpos=e.indexOf(".");
+var agee=feedback.age.value;
+var age1=/^[0-9]+$/;
+var a=" ";
+if(x==null || x=="")
+{
+a+="Enter your name\n";
+}
+if((feedback.gender[0].checked==false)&&(feedback.gender[1].checked==false))
+{
+a+="Please choose your gender\n";
+}
+if((feedback.hobby[0].checked==false)&&(feedback.hobby[1].checked==false) &&(feedback.hobby[2].checked==false))
+{
+a+="Please choose your hobby\n";
+}
+if(atpos<1 || dotpos<atpos+2 || dotpos>=e.length)
+{
+a+="Enter proper email address";
+}
+if(agee<18 || agee>45)
+{
+a+="Enter age above 18 or below 45";
+}
+if(feedback.age.value.match(age1)){
+}
+else{
+a+="Enter numeric values";
+}
+if(a==" ")
+{
+alert("Done");
+return true;
+}
+else
+{
+alert(a);
+}
+}
+</script>
+</head>
+<body>
+<form name="feedback">
+Name:
+<input type="text" name="lname"><br>
+Gender:
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="male">Male<br>
+Hobby:
+<input type="checkbox" name="hobby" value="singing">Singing
+<input type="checkbox" name="hobby" value="dancing">Dancing
+<input type="checkbox" name="hobby" value="acting">Acting<br>
+Email:
+<input type="text" name="email"><br>
+Age:
+<input type="text" name="age"><br>
+<input type="button" value="Submit" name="submitbutton"onclick="validate_form()">
+</form>
+</body>
+</html>

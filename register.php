@@ -10,12 +10,13 @@ if(isset($_POST['submit'])) {
     $Lastname = $_POST['Lastname'];
     $Mobile = $_POST['Mobile'];
     $Altmobile = $_POST['Altmobile'];
+    $Email = $_POST['Email'];
     $Address = $_POST['Address'];
     $Pincode = $_POST['Pincode'];
     $Countrycode = $_POST['Countrycode'];
 
-    $sql = "INSERT INTO user (CityID, Username, Password, Firstname, Lastname, Mobile, Altmobile, Address, Pincode, Countrycode)
-            VALUES ('$CityID', '$Username', '$Password', '$Firstname', '$Lastname', '$Mobile', '$Altmobile', '$Address', '$Pincode', '$Countrycode')";
+    $sql = "INSERT INTO user (CityID, Username, Password, Firstname, Lastname, Mobile, Altmobile,Email, Address, Pincode, Countrycode)
+            VALUES ('$CityID', '$Username', '$Password', '$Firstname', '$Lastname', '$Mobile', '$Altmobile','$Email', '$Address', '$Pincode', '$Countrycode')";
 
     $result = mysqli_query($conn, $sql);
 
@@ -24,6 +25,7 @@ if(isset($_POST['submit'])) {
     } else {
         echo "Error: " . mysqli_error($conn);
     }
+    echo '<script>window.location.href = "index.php";</script>';
 }
 ?>
 
@@ -95,9 +97,12 @@ if(isset($_POST['submit'])) {
                                 <input type="text" id="Username" name="Username" class="form-control" placeholder="Enter Username" required>
                             </div>
                             <div class="form-group">
-                                <label for="Password">Password:</label>
-                                <input type="password" id="Password" name="Password" class="form-control" placeholder="Enter Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{8,}$" title="Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character." required>
+                            <label for="Password">Password:</label>
+                            <input type="password" id="Password" name="Password" class="form-control" placeholder="Enter Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{8,}$" title="Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character." required>
+                            <div class="invalid-feedback">Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character.</div>
                             </div>
+
+
                             <div class="form-group">
                                 <label for="Firstname">Firstname:</label>
                                 <input type="text" id="Firstname" name="Firstname" class="form-control" placeholder="Enter Firstname" required>
@@ -113,6 +118,10 @@ if(isset($_POST['submit'])) {
                             <div class="form-group">
                                 <label for="Altmobile">Alt. Mobile:</label>
                                 <input type="text" id="Altmobile" name="Altmobile" class="form-control" placeholder="Enter Alternate Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="Email">Email:</label>
+                                <input type="text" id="Email" name="Email" class="form-control" placeholder="Enter email address eg: av@gmail.com">
                             </div>
                             <div class="form-group">
                                 <label for="Address">Address:</label>
